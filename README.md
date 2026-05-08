@@ -1,5 +1,5 @@
 # jeuSerieux
-# CodeBuilder : L'Atelier du Programmeur
+## CodeBuilder : L'Atelier du Programmeur
 
 Jeu sérieux pédagogique web pour l'initiation à la programmation.  
 Les élèves assemblent des blocs de commandes, exécutent le code en temps réel et observent l'état des variables et la console de sortie.
