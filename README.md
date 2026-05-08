@@ -21,9 +21,9 @@ Les élèves assemblent des blocs de commandes, exécutent le code en temps rée
 
 ## Structure du Projet
 codebuilder-jeu/
-├── index.html # Structure sémantique HTML5
-├── style.css # Design responsive & thème sombre
-└── script.js # Mini-interpréteur pédagogique (ES6)
+- index.html # Structure sémantique HTML5
+- style.css # Design responsive & thème sombre
+- script.js # Mini-interpréteur pédagogique (ES6)
 
 ## 🛠️ Technologies
 - **HTML5** / **CSS3** (Grid/Flexbox, Custom Properties)
