@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeBuilder | L'Atelier du Programmeur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="logo">💻 CodeBuilder</div>
+        <div class="level-info">
+            <span id="level-name">Niveau 1</span>
+            <span class="badge" id="status-badge">Prêt</span>
+        </div>
+    </header>
+
+    <main class="workspace">
+        <!-- Palette de commandes -->
+        <aside class="palette">
+            <h3>🧩 Commandes</h3>
+            <div id="cmd-list" class="cmd-grid"></div>
+            <div class="palette-hint">Clique pour ajouter au programme</div>
+        </aside>
+
+        <!-- Éditeur de code -->
+        <section class="editor-panel">
+            <div class="editor-header">
+                <h3>📝 Ton Programme</h3>
+                <div class="editor-actions">
+                    <button onclick="App.clear()" class="btn-sm">️ Effacer</button>
+                    <button onclick="App.resetLevel()" class="btn-sm">🔄 Réinitialiser</button>
+                </div>
+            </div>
+            <div id="code-editor" class="code-editor">
+                <div class="empty-state">Ajoute des commandes ci-dessus...</div>
+            </div>
+            <div class="run-bar">
+                <button onclick="App.run()" id="btn-run" class="btn-run">▶️ EXÉCUTER</button>
+                <button onclick="App.step()" id="btn-step" class="btn-run secondary">⏭️ ÉTAPE</button>
+            </div>
+        </section>
+
+        <!-- Console & Variables -->
+        <section class="output-panel">
+            <div class="console-box">
+                <h3>🖥️ Console</h3>
+                <div id="console-output" class="console-output"></div>
+            </div>
+            <div class="vars-box">
+                <h3>📦 Variables</h3>
+                <div id="vars-display" class="vars-display">Aucune variable</div>
+            </div>
+            <div id="feedback-area" class="feedback hidden"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Jeu pédagogique — Initiation à la programmation | Tronc Commun | 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
